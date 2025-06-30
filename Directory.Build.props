@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Product>Wix5SetupTrain</Product>
+    <Company>Biew Company</Company>
+    <Copyright>Copyright © Biew Company 2025</Copyright>
+    <Title Condition="'$(Title)' == ''">$(MSBuildProjectName)</Title>
+    <Authors Condition="'$(Authors)' == ''">$(Company)</Authors>
+    <Version>0.0.1.0</Version>
+    <ApplicationIcon Condition="'$(MSBuildProjectName)'=='Backend'">$(MSBuildThisFileDirectory)assets\logo.ico</ApplicationIcon>
+    <Configuration Condition="'$(Configuration)' != 'Release'">Debug</Configuration>
+<!--    <OutDir>C:\output\$(MSBuildProjectName)</OutDir>-->
+  </PropertyGroup>
+</Project>

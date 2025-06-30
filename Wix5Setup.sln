@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.csproj", "{34706C50-830F-484E-9325-83967388969B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientLib", "ClientLib\ClientLib.csproj", "{ACDB3EEF-C4C1-42BD-BE29-3962DAD02F2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".sln", ".sln", "{C07E4762-F186-419C-98D4-04B5CAE4A53E}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{ACC66816-07BE-42DD-9665-394CED5E9E1B}"
+	ProjectSection(SolutionItems) = preProject
+		assets\logo.ico = assets\logo.ico
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34706C50-830F-484E-9325-83967388969B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34706C50-830F-484E-9325-83967388969B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34706C50-830F-484E-9325-83967388969B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34706C50-830F-484E-9325-83967388969B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDB3EEF-C4C1-42BD-BE29-3962DAD02F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDB3EEF-C4C1-42BD-BE29-3962DAD02F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDB3EEF-C4C1-42BD-BE29-3962DAD02F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDB3EEF-C4C1-42BD-BE29-3962DAD02F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
