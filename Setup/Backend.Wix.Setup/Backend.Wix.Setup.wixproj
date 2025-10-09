@@ -1,0 +1,29 @@
+﻿<Project Sdk="WixToolset.Sdk/6.0.1">
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Heat" Version="6.0.1"/>
+    <PackageReference Include="WixToolset.UI.wixext" Version="6.0.1" />
+  </ItemGroup>
+
+  <Target Name="Harvesting" BeforeTargets="BeforeBuild">
+
+    <PropertyGroup>
+      <DefineConstants>
+        ProductName=$(Product);
+        InputPath=X:\Repos\Wix5Setup\Backend\bin\Debug\net8.0
+      </DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <HarvestDirectory Include="X:\Repos\Wix5Setup\Backend\bin\Debug\net8.0">
+        <ComponentGroupName>BackendComponents</ComponentGroupName>
+        <DirectoryRefId>INSTALLDIR</DirectoryRefId>
+        <AutogenerateGuids>true</AutogenerateGuids>
+        <PreprocessorVariable>var.InputPath</PreprocessorVariable>
+        <SuppressRegistry>true</SuppressRegistry>
+        <SuppressRootDirectory>true</SuppressRootDirectory>
+        <ToolPath>$(WixToolPath)</ToolPath>
+        <NoLogo>true</NoLogo>
+      </HarvestDirectory>
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,18 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+
+  <Package Id="TODO_Manufacturer.Backend.Wix.Setup" Name="Backend.Wix.Setup" Manufacturer="TODO Manufacturer"
+           Version="1.0.0.0">
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed."/>
+    <MediaTemplate EmbedCab="yes"/>
+
+    <ui:WixUI Id="WixUI_FeatureTree" InstallDirectory="INSTALLFOLDER" />
+
+    <Property Id="ApplicationFolderName" Value="abc" />
+    <Property Id="WixAppFolder" Value="WixPerUserFolder" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="BackendComponents"/>
+    </Feature>
+  </Package>
+</Wix>
