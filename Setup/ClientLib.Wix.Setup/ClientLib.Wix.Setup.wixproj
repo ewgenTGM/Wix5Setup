@@ -8,16 +8,16 @@
 		<PropertyGroup>
 			<DefineConstants>
 				ProductName=$(Product);
-				InputPath=X:\Repos\Wix5Setup\ClientLib\bin\Debug\net8.0
+				ClientPublishDir=$(ClientPublishDir);
 			</DefineConstants>
 		</PropertyGroup>
 
 		<ItemGroup>
-			<HarvestDirectory Include="X:\Repos\Wix5Setup\ClientLib\bin\Debug\net8.0">
+			<HarvestDirectory Include="$(ClientPublishDir)">
 				<ComponentGroupName>ClientLibComponents</ComponentGroupName>
 				<DirectoryRefId>INSTALLDIR</DirectoryRefId>
 				<AutogenerateGuids>true</AutogenerateGuids>
-				<PreprocessorVariable>var.InputPath</PreprocessorVariable>
+				<PreprocessorVariable>var.ClientPublishDir</PreprocessorVariable>
 				<SuppressRegistry>true</SuppressRegistry>
 				<SuppressRootDirectory>true</SuppressRootDirectory>
 				<ToolPath>$(WixToolPath)</ToolPath>

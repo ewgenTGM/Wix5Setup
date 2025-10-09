@@ -1,3 +1,4 @@
+using Models;
 using Serilog;
 
 namespace Backend;
@@ -16,6 +17,8 @@ internal static class Program
         var app = builder.Build();
 
         app.MapGet("/", () => "Hello World!");
+
+        var user = new User("Udo");
 
         await app.RunAsync();
     }

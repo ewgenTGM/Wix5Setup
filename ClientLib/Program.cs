@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ServerAccess;
 
 namespace ClientLib;
 
@@ -13,6 +14,8 @@ internal class Program
         };
         
         var serializer = new JsonSerializer();
+
+        var server = new ServerAccessLib(123);
         
         Console.WriteLine(user);
     }

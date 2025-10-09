@@ -9,16 +9,16 @@
     <PropertyGroup>
       <DefineConstants>
         ProductName=$(Product);
-        InputPath=X:\Repos\Wix5Setup\Backend\bin\Debug\net8.0
+        BackendPublishDir=$(BackendPublishDir);
       </DefineConstants>
     </PropertyGroup>
 
     <ItemGroup>
-      <HarvestDirectory Include="X:\Repos\Wix5Setup\Backend\bin\Debug\net8.0">
+      <HarvestDirectory Include="$(BackendPublishDir)">
         <ComponentGroupName>BackendComponents</ComponentGroupName>
         <DirectoryRefId>INSTALLDIR</DirectoryRefId>
         <AutogenerateGuids>true</AutogenerateGuids>
-        <PreprocessorVariable>var.InputPath</PreprocessorVariable>
+        <PreprocessorVariable>var.BackendPublishDir</PreprocessorVariable>
         <SuppressRegistry>true</SuppressRegistry>
         <SuppressRootDirectory>true</SuppressRootDirectory>
         <ToolPath>$(WixToolPath)</ToolPath>
