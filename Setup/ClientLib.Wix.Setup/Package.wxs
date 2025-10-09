@@ -1,10 +1,10 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
-  <Package Id="TODO_Manufacturer.ClientLib.Wix.Setup" Name="ClientLib.Wix.Setup" Manufacturer="TODO Manufacturer" Version="1.0.0.0">
-    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-    <MediaTemplate EmbedCab="yes" />
+	<Package Name="ClientLib.Wix.Setup" Manufacturer="TODO Manufacturer" Version="1.0.0.0" UpgradeCode="6886697D-39DC-464A-AA47-6E4329D6DF1C">
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
 
-    <Feature Id="Main">
-      <ComponentGroupRef Id="ClientLibComponents" />
-    </Feature>
-  </Package>
+		<Feature Id="Main">
+			<ComponentGroupRef Id="ClientLibComponents" />
+		</Feature>
+	</Package>
 </Wix>
